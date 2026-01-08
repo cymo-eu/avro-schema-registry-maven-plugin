@@ -1,0 +1,32 @@
+LICENSE
+Business Source License 1.1 (BSL 1.1)
+Copyright (c) 2026 Cymo BV
+Parameters
+Licensor: Cymo BV
+Licensed Work: avro-schema-registry-maven-plugin
+Additional Use Grant: Internal use, evaluation, and non-commercial use are permitted.
+Change Date: None (this software does NOT automatically convert to an open-source license)
+Change License: Not applicable
+Terms
+This License governs use of the Licensed Work. By using, copying, modifying, or distributing the Licensed Work, you agree to the terms below.
+1. Grant of Rights
+Subject to the restrictions below, the Licensor hereby grants you a non-exclusive, non-transferable, non-sublicensable license to:
+view, download, and use the Licensed Work;
+modify the Licensed Work for your own internal purposes;
+run the Licensed Work in non-production or production environments for your own organization.
+2. Restrictions
+You may not, without an explicit commercial license from the Licensor:
+offer the Licensed Work as a hosted, managed, or SaaS service;
+resell, sublicense, or commercially distribute the Licensed Work;
+embed the Licensed Work in a commercial product or service offered to third parties;
+provide the Licensed Work to third parties as part of a paid service.
+Any use outside the scope of Section 1 requires a separate commercial agreement with the Licensor.
+3. Redistribution
+Redistribution of the Licensed Work, whether modified or unmodified, is not permitted except with explicit written permission from the Licensor.
+4. Ownership
+The Licensed Work is owned by the Licensor. This License does not grant any rights in the Licensor’s trademarks, logos, or brand names.
+5. Disclaimer of Warranty
+THE LICENSED WORK IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+6. Limitation of Liability
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE LICENSED WORK OR THE USE OR OTHER DEALINGS IN THE LICENSED WORK.
+For commercial licensing, contact: info@cymo.eu
