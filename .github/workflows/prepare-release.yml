@@ -23,6 +23,11 @@ jobs:
         distribution: 'temurin'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
+        
+    - name: Identify Git
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
 
     - name: Update version
       run: mvn versions:set -DnewVersion=${{ inputs.tag }} -DgenerateBackupPoms=false
