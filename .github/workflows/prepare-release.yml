@@ -1,0 +1,42 @@
+# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
+# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
+
+name: Prepare Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        description: "Release version (e.g. 0.3.0)"
+        required: true
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+    - name: Update version
+      run: mvn versions:set -DnewVersion=${{ inputs.tag }} -DgenerateBackupPoms=false
+
+    - name: Create tag
+      run: |
+        git tag v${{ inputs.tag }}
+        git push origin main --tags
+
+    - name: Create next snapshot
+      run: mvn versions:set -DnextSnapshotIndexToIncrement=2 -DnextSnapshot -DgenerateBackupPoms=false
+
+    - name: Commit snapshot
+      run: |
+        git commit -m "feat: prepare next SNAPSHOT version"
+        git push origin main
+
