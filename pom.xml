@@ -16,7 +16,7 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
-		
+
 		<maven.plugin.annotations.version>3.9.0</maven.plugin.annotations.version>
 		<maven.version>3.8.6</maven.version>
 		<avro.version>1.12.1</avro.version>
@@ -92,5 +92,13 @@
 			<url>https://packages.confluent.io/maven/</url>
 		</pluginRepository>
 	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Releases</name>
+			<url>https://maven.pkg.github.com/cymo-eu/avro-schema-registry-maven-plugin</url>
+		</repository>
+	</distributionManagement>
 
 </project>

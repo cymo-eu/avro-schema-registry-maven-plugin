@@ -34,7 +34,7 @@ jobs:
 
     - name: Create tag
       run: |
-        git add .
+        git add pom.xml
         git commit -m "release: ${{ inputs.tag }}"
         git tag v${{ inputs.tag }}
         git push origin main --tags
@@ -44,7 +44,7 @@ jobs:
 
     - name: Commit snapshot
       run: |
-        git add .
+        git add pom.xml
         git commit -m "feat: prepare next SNAPSHOT version"
         git push origin main
 
