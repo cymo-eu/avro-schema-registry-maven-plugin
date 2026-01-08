@@ -40,7 +40,7 @@ Generate Avro dtos straight from the Schema Registry. Instead of importing avdl/
 | schemaRegistryBasicAuthUserInfo | false    | Plain text value of the basic authentication key:secret     |
 | subjects                        | true     | List of subjects for which a java class should be generated |
 
-## README – License Summary (Plain English)
+## README – License Summary
 
 ### About the License
 
