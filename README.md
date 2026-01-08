@@ -10,7 +10,7 @@ Generate Avro dtos straight from the Schema Registry. Instead of importing avdl/
 			<plugin>
 				<groupId>eu.cymo</groupId>
 				<artifactId>avro-schema-registry-maven-plugin</artifactId>
-				<version>0.1.0-SNAPSHOT</version>
+				<version>${avro-schema-registry-maven-plugin.version}</version>
 				<executions>
 					<execution>
 						<goals>
