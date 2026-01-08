@@ -34,8 +34,8 @@ Generate Avro dtos straight from the Schema Registry. Instead of importing avdl/
 
 ### Configuration Properties
 
-| Name                            | Required | Value                                                      |
-|---------------------------------|----------|------------------------------------------------------------|
-| schemaRegistryUrl               | true     | Base url to the schema registry                            |
-| schemaRegistryBasicAuthUserInfo | false    | Plain text value of the basic authentication key:secret    |
-| subjects                        | true     | List of subject for which a java class should be generated |
+| Name                            | Required | Value                                                       |
+|---------------------------------|----------|-------------------------------------------------------------|
+| schemaRegistryUrl               | true     | Base url to the schema registry                             |
+| schemaRegistryBasicAuthUserInfo | false    | Plain text value of the basic authentication key:secret     |
+| subjects                        | true     | List of subjects for which a java class should be generated |
